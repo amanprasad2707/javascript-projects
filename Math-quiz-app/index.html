@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>score: <span id="score">0</span></h1>
+      <h2 id="question">Q. What is 8 multiply by 4?</h2>
+      <form id="questionForm" onsubmit="checkAnswer(event)">
+        <input required type="number" name="ans" id="ans">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
