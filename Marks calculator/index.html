@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marks Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <h1>Enter your marks</h1>
+      <form id="calculateForm" onsubmit="calculateMarks(event)">
+        <input type="number" min="0" max="100" name="english" id="english" placeholder="English" required>
+        <input type="number" min="0" max="100" name="hindi" id="hindi" placeholder="hindi" required>
+        <input type="number" min="0" max="100" name="maths" id="maths" placeholder="math" required>
+        <input type="number" min="0" max="100" name="science" id="science" placeholder="science" required>
+        <input type="number" min="0" max="100" name="computer" id="computer" placeholder="computer" required>
+        <input type="number" min="0" max="100" name="sanskrit" id="sanskrit" placeholder="sanskrit" required>
+        <button class="btn" type="submit">submit</button>
+
+      </form>
+      <div class="totalSection">
+        <h2>Total Marks: <span id="totalMarks"></span></h2>
+        <h2>percentage: <span id="percentage"></span></h2>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
