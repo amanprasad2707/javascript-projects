@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+  }
+  .card{
+    background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #0fac58 0%, #b8b206 100%);
+  
+    padding: 20px;
+    border-radius: 25px;
+  }
+  .search{
+    display: flex;
+    gap: 1rem;
+  }
+  .search input{
+    background-color: white;
+    padding: 7px 15px;
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    color: #0fac58;
+    font-weight: 500;
+  }
+  .search input:focus{
+  outline: 2px solid #f1ea05;
+  }
+  .search .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    padding: 15px;
+  }
+  .search .icon:active{
+    background-color: #0fac58;
+  }
+  .weather{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+  
+  #weather-icon{
+    width: 150px;
+    margin: 10px 0;
+  }
+  .weather h1{
+    font-size: 50px;
+  margin-bottom: 10px;
+  }
+  .weather h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .detail{
+    display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
+  }
+  .detail img{
+    width: 25px;
+  }
+  .col{
+    display: flex;
+    gap: 10px;
+  }
+  .status h3{
+    font-size: 20px;
+    margin-bottom: 2px;
+  }
+  .status p{
+    font-size: 16px;
+    font-weight: 550;
+  }
+  .error{
+    font-size: 20px;
+    color: #ff0000;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+    display: none;
+  }
+  .loading{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #get-location{
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  #get-location span{
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: underline;
+  }
